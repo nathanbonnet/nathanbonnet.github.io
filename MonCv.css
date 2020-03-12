@@ -32,13 +32,14 @@
     text-align: center;
 }
 
-.bloc-parent .column-left h1 {
+.bloc-parent .column-left h2 {
     background-color: rgb(64, 64,64);
     text-transform: uppercase;
     color: rgb(255, 205, 0);
     font-size: 18px;
     padding-top: 10px;
     padding-bottom: 10px;
+    text-align: center;
 }
 
 .bloc-parent .column-left .bloc-contact .bloc-info {
@@ -116,7 +117,7 @@
     border-bottom: 2px solid rgb(255, 205, 0);
 }
 
-.bloc-parent .column-right .bloc-parcour .formation h1 {
+.bloc-parent .column-right .bloc-parcour .formation h2 {
     margin-left: 20px;
 }
 
@@ -198,6 +199,25 @@ responsive
     padding: 5px;
     font-size: 1.5em;
     }   
+    .bloc-parent {
+        display: flex;
+        align-items: center
+    }
+
+    .bloc-parent .column-right{
+        width: 70%;
+    }
+
+    .bloc-parent {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .bloc-parent .column-left {
+        width: 60%;
+        text-align: center;
+        margin-top: 5%;
+    }
 }
 
 
@@ -207,37 +227,11 @@ responsive
         align-items: flex-start;
     }
 
-
-    .bloc-parent .column-right{
-        width: 70%;
-    }
-}
-
-@media screen and (max-width: 550px){
-
-  
-    .bloc-parent .column-left {
-    display: none;
+    .bloc-parent .column-left .bloc-contact .bloc-info {
+        text-align: center;
+        align-items: center;
     }
 
-    .bloc-parent .column-right{
-        width: 100%;
-    }
-
-    .bloc-parent .column-right .bloc-parcour .bloc__formation-1, .bloc__formation-2 {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin-top: 20px;
-    }
-
-    .bloc-parent .column-right .bloc-parcour .bloc__formation-1 ul {
-        width: 30%;
-    }
-
-    .bloc-parent .column-right .bloc-parcour .bloc__formation-2 ul  {
-        width: 30%;
-    }
 }
 
 @media screen and (max-width: 440px) {
@@ -249,21 +243,14 @@ responsive
     .bloc-parent .column-right .bloc-parcour .bloc__formation-2 ul li {
         width: 100%;
     }
-
-    .bloc-parent .column-right .bloc-parcour .bloc__formation-1 ul {
-        width: 100%;
-    }
-
-    .bloc-parent .column-right .bloc-parcour .bloc__formation-2 ul {
-        width: 100%;
-    }
+   
 
     .bloc-parent .column-right .bloc-parcour .bloc__formation-1,.bloc__formation-2 {
         flex-direction: column;
     }
 
     .bloc-parent .column-right .bloc-parcour .bloc-text {
-        width: 100%;
+        width: 85%;
         padding-left: 30px;
         padding-right: 30px;
     }
