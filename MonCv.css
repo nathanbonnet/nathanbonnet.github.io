@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
 .container {
     max-width: 1080px;
     margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-family: -apple-system;
+    font-family: 'Muli', sans-serif;
 }
 
 .container .column-left {
@@ -211,7 +213,7 @@ responsive
     }
 
     .container .column-left {
-        width: 60%;
+        width: 70%;
         text-align: center;
         margin-top: 5%;
     }
