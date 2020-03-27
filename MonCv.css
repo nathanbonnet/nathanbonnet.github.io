@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
+body {
+    margin: 0;
+}
+
 .container {
     max-width: 1080px;
     margin: auto;
@@ -9,16 +13,59 @@
     font-family: 'Muli', sans-serif;
 }
 
+h3 {
+    font-size: 15px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 25px;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: 20px;
+}
+
+h5 {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+h6 {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+
 .container .column-left {
     width: 25%;
     background-color: rgb(255, 205, 0);
     color: gray;
     padding-top: 1em;
     padding-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.bloc-loisir {
+    margin-top: auto;
 }
 
 .container .column-right{
     width: 60%;
+    margin-top: 30px;
+}
+
+
+header .container .column-right .bloc-nom h1 {
+    font-size: 35px;
+    text-align: left;
+}
+
+header .container .column-right .bloc-nom p {
+    font-size: 18px;
+    text-align: left
 }
 
 
@@ -57,7 +104,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 15em;
     line-height: 1.4em;
 }
 
@@ -192,7 +238,20 @@ responsive
         width: 60%;
     }
 
-    
+    header .container .column-right .bloc-nom h1 {
+        font-size: 35px;
+        text-align: center !important;
+    }
+
+    header .container .column-right .bloc-nom p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    header .container .column-left {
+        background-color: white;
+    }
+
     .container .column-left .bloc-loisir .bloc-logo .fas {
     margin-left: 5px;
     padding: 5px;
