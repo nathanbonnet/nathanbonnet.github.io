@@ -173,13 +173,35 @@ header .container .column-right .bloc-nom p {
     font-size: 2em;
 }
 
-.container .column-right .bloc-parcour .bloc__formation-1, .bloc__formation-2 {
+.container .column-right .bloc-parcour .bloc__formation{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 20px;
 }
 
+
+.container .column-right .bloc-parcour .bloc__formation .fa {
+    color: rgb(255, 205, 0);
+    font-size: 8px;
+    padding-right: 15px;
+    margin-top: 23px;
+}
+
+.container .column-right .bloc-parcour .bloc__formation .far {
+    color: rgb(255, 205, 0);
+    font-size: 15px;
+    padding-right: 15px;
+    margin-top: 18px;
+}
+
+.container .column-right .bloc-parcour .bloc__formation .circle {
+    display: flex;
+}
+
+.container .column-right .bloc-parcour .bloc__formation .text-left {
+   width: 81%;
+}
 
 .container .column-right .bloc-parcour .bloc-text {
     display: flex;
@@ -222,19 +244,15 @@ responsive
 
 @media screen and (max-width: 830px) {
 
-    .container .column-right .bloc-parcour .bloc__formation-1 ul  {
+    .container .column-right .bloc-parcour .bloc__formation ul  {
         width: 60%;
     }
 
-    .container .column-right .bloc-parcour .bloc__formation-2 ul  {
+    .container .column-right .bloc-parcour .bloc__formation ul  {
         width: 60%;
     }
 
-    .container .column-right .bloc-parcour .bloc__formation-1 ul li {
-        width: 60%;
-    }
-
-    .container .column-right .bloc-parcour .bloc__formation-2 ul li {
+    .container .column-right .bloc-parcour .bloc__formation ul li {
         width: 60%;
     }
 
@@ -294,16 +312,11 @@ responsive
 
 @media screen and (max-width: 440px) {
 
-    .container .column-right .bloc-parcour .bloc__formation-1 ul li {
+    .container .column-right .bloc-parcour .bloc__formation ul li {
         width: 100%;
     }
 
-    .container .column-right .bloc-parcour .bloc__formation-2 ul li {
-        width: 100%;
-    }
-   
-
-    .container .column-right .bloc-parcour .bloc__formation-1,.bloc__formation-2 {
+    .container .column-right .bloc-parcour .bloc__formation{
         flex-direction: column;
     }
 
