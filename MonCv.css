@@ -117,6 +117,7 @@ header .container .column-right .bloc-nom p {
 .container .column-left .bloc-moi p {
     width: 85%;
     text-align: justify;
+    margin: auto;
 }
 
 
