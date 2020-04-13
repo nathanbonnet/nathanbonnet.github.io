@@ -4,6 +4,10 @@ body {
     margin: 0;
 }
 
+address {
+    font-style: normal;
+}
+
 .container {
     max-width: 1080px;
     margin: auto;
@@ -239,7 +243,7 @@ header .container .column-right .bloc-nom p {
 }
 
 .container .column-left .bloc-contact .bloc-info .mt {
-    margin-top: -15px;
+    display: block;
 }
 
 /**
