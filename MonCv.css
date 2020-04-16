@@ -275,7 +275,7 @@ responsive
         text-align: center;
     }
 
-    header .container .column-left {
+    .header .column-left {
         background-color: white;
     }
 
